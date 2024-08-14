@@ -7,12 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>gii</h1>
-    <p>HHHHHHHHHjkk</p>
+    <!-- navBar start -->
+    <nav>
+        <input type="checkbox" id="switcher" class="d-none">
+        <label for="switcher" class="menu-icon">&#9776;</label>
+        <div class="left-part">
+            <p>Yummy<span class="logo">.</span></p>
+        </div>
+        <div class="middle-part">
+            <a href="./index.html"><i class="bi close-icon bi-x-lg"></i></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#">Dropdown<i class="bi bi-caret-down"></i></a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right-part">
+            <!--? modal btn -->
+            <button modal-data="firstModal" class="btn-modal">LogIn</button>
+
+            <!--? modal -->
+            <div id="firstModal" class="backdrop">
+                <div class="modal">
+                    <div class="modal-title">
+                        <h1>LogIN</h1>
+                    </div>
+                    <div class="modal-body">
+                        <label for="">Email</label><br>
+                        <input type="email" name="" id=""><br>
+
+                        <label for="">Password</label><br>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </nav>
 
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
+    <script src="./public/js/modal.js"></script>
 </body>
 </html>
