@@ -1,0 +1,74 @@
+.heroSection
+    display: flex
+    padding-top: 20vh
+    padding-bottom: 10vh
+    padding-left: 5vw
+    padding-right: 5vw
+    align-items: center
+    justify-content: space-between
+    background-color: #f2f2f2
+.hero-img
+    animation: up-down 2s ease-in-out infinite alternate-reverse both
+
+.heroSection-leftPart-p1
+    font-family: amaticFont
+    font-size: 60px
+    font-weight: bold
+    width: 400px
+    color: #37373F
+    margin: 0
+
+.heroSection-leftPart-p2
+    font-size: robotoFont
+    color: #212529b2
+    width: 400px
+    font-size: 20px
+    margin: 0
+    padding-bottom: 5vh
+
+.heroSection-buttons
+    display: flex
+    align-items: center
+    gap: 3vw
+    button
+        background-color: #ce1212
+        border: none
+        color: #fff
+        font-size: 14px
+        padding: 8px 26px
+        border-radius: 40px
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+            background-color: #ce1212cd
+    div
+        display: flex
+        align-items: center
+        gap: 1vw
+        i
+            font-size: 35px
+            color: #ce1212
+            cursor: pointer
+        a
+            color: #212529
+            text-decoration: none
+            font-weight: bold
+            font-size: 13px
+            font-family: robotoFont
+            
+
+@media ( max-width: 426px)
+    .heroSection
+        display: flex
+        flex-direction: column
+        flex-direction: column-reverse
+        padding-top: 10vh
+    .hero-img
+        width: 400px
+
+    .heroSection-leftPart-p1
+        font-size: 25px
+        font-weight: 0
+        width: 200px
+    .heroSection-leftPart-p2
+        font-size: 18px

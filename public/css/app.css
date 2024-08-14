@@ -12028,5 +12028,122 @@ nav ul li a:hover {
     height: 45%;
   }
 }
+.heroSection {
+  display: flex;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.hero-img {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.heroSection-leftPart-p1 {
+  font-family: amaticFont;
+  font-size: 60px;
+  font-weight: bold;
+  width: 400px;
+  color: #37373F;
+  margin: 0;
+}
+
+.heroSection-leftPart-p2 {
+  font-size: robotoFont;
+  color: rgba(33, 37, 41, 0.6980392157);
+  width: 400px;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 5vh;
+}
+
+.heroSection-buttons {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.heroSection-buttons button {
+  background-color: #ce1212;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 26px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.heroSection-buttons button:hover {
+  background-color: rgba(206, 18, 18, 0.8039215686);
+}
+.heroSection-buttons div {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.heroSection-buttons div i {
+  font-size: 35px;
+  color: #ce1212;
+  cursor: pointer;
+}
+.heroSection-buttons div a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: robotoFont;
+}
+
+@media (max-width: 426px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 10vh;
+  }
+  .hero-img {
+    width: 400px;
+  }
+  .heroSection-leftPart-p1 {
+    font-size: 25px;
+    font-weight: 0;
+    width: 200px;
+  }
+  .heroSection-leftPart-p2 {
+    font-size: 18px;
+  }
+}
+.aboutSection-p1 {
+  font-family: robotoFont;
+  font-size: 13px;
+  color: rgba(33, 37, 41, 0.5215686275);
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.aboutSection-p2 {
+  font-family: amaticFont;
+  color: #37373F;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+.aboutSection-p2 span {
+  color: #ce1212;
+}
+
+.aboutSection-content {
+  display: flex;
+  gap: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.aboutSection-rightPart div {
+  display: flex;
+}
 
 /*# sourceMappingURL=app.css.map */
