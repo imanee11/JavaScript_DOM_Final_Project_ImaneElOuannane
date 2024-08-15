@@ -1,6 +1,6 @@
 .aboutSection
     font-family: robotoFont
-
+    
 .aboutSection-p1
     font-family: robotoFont
     font-size: 13px
@@ -17,12 +17,14 @@
     span
         color: #ce1212
     
-.aboutSection-content
+.aboutSection-firstContent
     display: flex
     gap: 5vw
+    padding-bottom: 10vh
     padding-left: 5vw
     padding-right: 5vw
-.aboutSection-rightPart
+    
+.aboutSection-firstContent-rightPart
     div
         display: flex
         gap: 8px
@@ -31,10 +33,10 @@
             font-size: 20px
             
 
-.aboutSection-rightPart-p1
+.aboutSection-firstContent-rightPart-p1
     color: #212529a7
 
-.aboutSection-leftPart
+.aboutSection-firstContent-leftPart
     img
         padding-bottom: 5vh
 .border-div
@@ -78,15 +80,156 @@
             color: #fff
     
 
+
+
+
+.aboutSection-secondContent
+    background-color: #f2f2f2
+    display: flex
+    gap: 2vw
+    padding-left: 5vw
+    padding-right: 5vw
+    padding-top: 10vh
+    padding-bottom: 10vh
+
+.redDiv
+    width: 31%
+    background-color: #ce1212
+    color: #fff
+    padding: 30px
+    .redDiv-p1
+        font-size: 35px
+        font-weight: bold
+    .redDiv-btn
+        display: flex
+        justify-content: center
+        text-align: center
+        button
+            background-color: #ffffff68
+            color: #fff
+            border: none
+            font-size: 15px
+            padding: 8px 26px
+            border-radius: 40px
+            cursor: pointer
+            transition: 0.3s
+            &:hover
+                background-color: #fff
+                color: #ce1212
+.whiteDiv
+    width: 23%
+    background-color: #fff
+    padding: 30px
+    text-align: center
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 5vh
+    div
+        background-color: #ce12120f
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        display: flex
+        text-align: center
+        align-items: center
+        justify-content: center
+        transition: 0.3s
+        cursor: pointer
+
+        &:hover
+            background-color: #ce1212 
+            
+        i
+            font-size: 30px
+            color: #ce1212
+            transition: 0.3s
+
+            &:hover
+                color: #fff
+    .whiteDiv-p1
+        color: #37373F
+        font-weight: bold
+    .whiteDiv-p2
+        color: #212529af
+            
+        
+
+
+
+
+.aboutSection-thirdContent
+    background: url(../images/stats-bg.jpg) center center/cover 
+    display: flex
+    justify-content: space-between
+    text-align: center
+    position: relative
+
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(0,0 ,0 ,0.5)
+    div
+        color: #fff
+        z-index: 1000
+        padding-top: 130px
+        padding-bottom: 130px
+        padding-left: 100px
+        padding-right: 100px
+        .thirdContent-p1
+            font-weight: bold
+            font-size: 48px
+            margin: 0
+        .thirdContent-p2
+            margin: 0
+            color: #ffffff9f
+            font-weight: bold
+
+
+
+
+
+
 @media ( max-width: 426px)
-    .aboutSection-content
+    .aboutSection-firstContent
         display: flex
         flex-direction: column
-    .aboutSection-leftPart
+    .aboutSection-firstContent-leftPart
         img
             max-width: 100%
             padding-bottom: 5vh
     .playImg
         img
             max-width: 100%
+
+
+
+    .aboutSection-secondContent
+        display: flex
+        flex-direction: column
+        gap: 5vw
+        
+        .redDiv
+            width: 100%  
+        .whiteDiv
+            width: 100% 
+        
+    .aboutSection-thirdContent
+        display: flex
+        flex-direction: column
+        gap: 10vh
+        padding-top: 10vh
+        padding-bottom:10vh
+        div
+            color: #fff
+            z-index: 1000
+            padding: 0
+            
+
+        
     

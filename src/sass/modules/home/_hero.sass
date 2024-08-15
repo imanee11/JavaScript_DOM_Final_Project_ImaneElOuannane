@@ -7,8 +7,17 @@
     align-items: center
     justify-content: space-between
     background-color: #f2f2f2
-.hero-img
+
+
+@keyframes up-down
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(20px)
+.animated
     animation: up-down 2s ease-in-out infinite alternate-reverse both
+
+
 
 .heroSection-leftPart-p1
     font-family: amaticFont
@@ -63,8 +72,9 @@
         flex-direction: column
         flex-direction: column-reverse
         padding-top: 10vh
-    .hero-img
+    .animated
         max-width: 100%
+        padding-bottom: 5vh
 
     .heroSection-leftPart-p1
         font-size: 25px
