@@ -1,2 +1,19 @@
 @import ../../node_modules/bootstrap/scss/functions
 @import ../../node_modules/bootstrap/scss/variables
+
+$firstTitle : #979fa9
+$secondTitle : #37373F
+$color : #54595e
+$span : #ce1212
+
+$myColor : ("firstTitle" : $firstTitle , "secondTitle":$secondTitle , "span" : $span, "color" : $color)
+
+
+$theme-colors : map-merge($myColor , $theme-colors)
+
+
+
+$spacer : 20px
+$custom-spacers: ( 6: $spacer * 4, 7: $spacer * 6, 8: $spacer * 7, 9: $spacer * 9, 10: $spacer * 10 , 11: $spacer * 11)
+$spacers: map-merge($spacers, $custom-spacers)
+
