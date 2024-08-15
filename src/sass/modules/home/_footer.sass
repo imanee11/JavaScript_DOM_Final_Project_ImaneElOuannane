@@ -1,0 +1,60 @@
+footer
+    background-color: #1f1f24
+    padding-top: 5vh
+    padding-left: 5vw
+    padding-right: 5vw
+    font-family: robotoFont
+    padding-bottom: 5vh
+    
+.footerPartOne
+    display: flex
+    color: #fff
+    justify-content: space-between
+    padding-bottom: 5vh
+    border-bottom: 0.5px solid #606067
+    .footerDiv1
+        display: flex
+        gap: 1vw
+        i
+            color: #ce1212
+            font-size: 25px
+
+.footerDiv1-p1
+    font-weight: bold
+.footerDiv1-p2
+    width: 180px
+    font-size: 14px
+.mediaDiv
+    div
+        i
+            border-radius: 50%
+            border: 0.5px solid #ffffff72
+            padding: 10px
+            color: #ffffff72
+            transition: 0.3s
+            &:hover
+                color: #ce1212
+                border: 0.5px solid #ce1212
+
+.footerPartTwo
+    color: #fff
+    text-align: center
+    padding-top: 5vh
+
+.footerPartTwo-p1,
+.footerPartTwo-p2
+    font-size: 14px
+    margin: 0
+.footerPartTwo-p2
+    a
+        color: #ce1212
+        text-decoration: none
+
+
+@media ( max-width: 426px)
+    .footerPartOne
+        display: flex
+        flex-direction: column
+        .footerDiv1
+            display: flex
+            gap: 3vw
