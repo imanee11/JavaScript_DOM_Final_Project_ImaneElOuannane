@@ -1,0 +1,205 @@
+.chefsSection
+    font-family: robotoFont
+    padding-bottom: 10vh
+    
+.chefsSection-p1
+    font-size: 13px
+    color: #21252985
+    text-align: center
+    padding-top: 10vh
+
+.chefsSection-p2
+    font-family: amaticFont
+    color: #37373F
+    font-size: 50px
+    text-align: center
+    padding-bottom: 5vh
+    span
+        color: #ce1212
+
+
+
+
+    
+
+.media
+    display: flex
+    flex-direction: column
+    background-color: #ffffff8a
+    width: 4vw
+    text-align: center
+    gap: 1vh
+    padding-top: 1vh
+    padding-bottom: 1vh
+    border-radius: 5px
+    position: absolute
+    top: 25px
+    right: 10px
+    animation: up-down 2s ease-in-out infinite alternate-reverse both
+    i
+        color: #37373fa2
+        transition: 0.3s
+        font-size: 20px
+        &:hover
+            color: #37373F
+
+.media 
+    display: none
+
+
+
+
+@keyframes up-down
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(20px)
+
+
+.chefsDiv
+    display: flex
+    padding-left: 3vw
+    padding-right: 5vw
+    padding-bottom: 10vh
+    gap: 2vw
+    .chef
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+        border-radius: 5px
+        position: relative
+        &:hover
+            transform: scale(1.04)
+            transition: 0.4s
+        &:hover .media
+            display: flex
+
+        .chefContent
+            text-align: center
+            padding-top: 5vh
+            padding-bottom: 5vh
+            padding-left: 3vw
+            padding-right: 3vw
+            .chefName
+                font-weight: bold
+                font-size: 20px
+                margin: 0
+                color: #37373F
+            .chefGrade
+                font-size: 14px
+                color: #212529ae
+            .desc 
+                font-size: 14px
+                color: #212529e9
+
+
+.chefImg
+    position: relative
+    img
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+.shape
+    img
+        position: absolute
+        bottom: 0
+
+
+.bookTable
+    margin-left: 3vw
+    margin-right: 3vw
+    display: flex
+    align-items: center
+    background-color: #21252909
+    gap: 2vw
+
+
+.bookTableForm
+    display: flex
+    flex-direction: column
+    div
+        display: flex
+        gap: 3vw
+        padding-bottom: 3vh
+        input
+            width: 210px
+            height: 45px
+            border: #2125292d solid 1px
+            font-size: 14px
+            padding-left: 10px
+            &::placeholder
+                font-size: 14px
+                color: #21252964
+    textarea
+        border: #2125292d solid 1px
+        font-size: 14px
+        padding-left: 10px
+        height: 150px
+        width: 100%
+        
+        &::placeholder
+            font-size: 14px
+            color: #21252964
+
+    button
+        margin: auto
+        background-color: #ce1212
+        border: none
+        padding: 2vh 5vw
+        color: #fff
+        border-radius: 5px
+    
+            
+
+
+
+@media ( max-width: 426px)
+    .chefsDiv
+        display: flex
+        flex-direction: column
+        padding-left: 3vw
+        padding-right: 3vw
+        padding-bottom: 10vh
+        gap: 3vh
+
+    .chefImg
+        max-width: 100%
+        img
+            width: 100%
+    
+
+    .media
+        width: 10vw
+
+
+
+    .bookTable
+        margin-left: 3vw
+        margin-right: 3vw
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: #21252909
+        gap: 4vh
+        padding-bottom: 5vh
+
+    .bookTableForm
+        div
+            display: flex
+            flex-direction: column
+            gap: 3vh
+            padding-bottom: 3vh
+            width: 85vw
+            input
+                width: 100%
+                height: 45px
+                border: #2125292d solid 1px
+                font-size: 14px
+                padding-left: 10px
+
+        button
+            padding: 2vh 15vw
+
+    .bookTableImg
+        img
+            width: 100%
+
+

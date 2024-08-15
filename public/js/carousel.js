@@ -37,6 +37,9 @@ const slideImage = (index , myBtn) => {
 
 nextBtns.forEach(next => {
     next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) })
+    setInterval(() => {
+        next.click()
+    }, 3000);
 });
 
 
