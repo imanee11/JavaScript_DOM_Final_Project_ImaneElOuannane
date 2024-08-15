@@ -12463,7 +12463,7 @@ nav ul li a:hover {
   width: 100%;
   padding: 2vh 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12483,6 +12483,26 @@ nav ul li a:hover {
 .slide-d1 {
   padding-left: 2vw;
   border-left: 3px solid #ce1212;
+}
+
+@media (max-width: 426px) {
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+    min-width: 100%;
+    padding-left: 3vw;
+  }
+  .slide .slide-p1 {
+    width: 400px;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .indicator {
+    padding: 1vh 1.5vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
