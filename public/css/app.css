@@ -14987,6 +14987,29 @@ nav ul li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.playBtn:hover, .playBtn:focus {
+  color: #313133;
+}
+.playBtn:hover::before, .playBtn:focus::before {
+  opacity: 1;
+}
+.playBtn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ce1212;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+.playBtn:hover::after, .playBtn:focus::after {
+  animation: none;
+  display: none;
+}
 .playBtn button {
   border: none;
   background: #ce1212;
@@ -14999,6 +15022,18 @@ nav ul li a:hover {
   color: #fff;
 }
 
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
 .aboutSection-secondContent {
   background-color: #f2f2f2;
   display: flex;
