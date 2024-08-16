@@ -1,6 +1,8 @@
 .gallerySection
     font-family: robotoFont
-    padding-bottom: 10vh
+    padding-bottom: 20vh
+    padding-left: 5vw
+    padding-right: 5vw
     background-color: #f2f2f2
     
 .gallerySection-p1
@@ -17,3 +19,16 @@
     padding-bottom: 5vh
     span
         color: #ce1212
+
+.slide3 
+    img
+        padding: 5px
+        transition: 0.3s
+        &:hover
+            border: 4px solid #ce1212
+
+@media ( max-width: 426px)
+    .slide3
+        min-width: 100%
+        img
+            min-width: 100%

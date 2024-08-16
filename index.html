@@ -22,6 +22,7 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#">Dropdown <i class="bi bi-chevron-down"></i></a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -177,6 +178,60 @@
         <p class="menuSection-p1">OUR MENU</p>
         <p class="menuSection-p2">CHECK OUR <span>YUMMY MENU</span></p>
         <div class="menuSection-firstPart">
+            <div class="divButtons">
+                <button id="starters">Starters</button>
+                <button id="breakfast">Breakfast</button>
+                <button id="lunch">Lunch</button>
+                <button id="dinner">Dinner</button>
+            </div>
+
+            <div class="content">
+                <p class="menuSection-p1">MENU</p>
+                <p class="content-p2"><span>Starters</span></p>
+
+                <div class="plates">
+                    <div>
+                        <img src="./public/images/menu/menu-item-1.png" alt="" width="250">
+                        <p class="plates-p1">Magnam Tiste</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$5.95</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/menu/menu-item-2.png" alt="" width="250">
+                        <p class="plates-p1">Aut Luia</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$14.95</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/menu/menu-item-3.png" alt="" width="250">
+                        <p class="plates-p1">Est Eligendi</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$8.95</p>
+                    </div>
+                </div>
+
+                <div class="plates">
+                    <div>
+                        <img src="./public/images/menu/menu-item-4.png" alt="" width="250">
+                        <p class="plates-p1">Eos Luibusdam</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$12.95</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/menu/menu-item-5.png" alt="" width="250">
+                        <p class="plates-p1">Eos Luibusdam</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$12.95</p>
+                    </div>
+                    <div>
+                        <img src="./public/images/menu/menu-item-6.png" alt="" width="250">
+                        <p class="plates-p1">Laboriosam Direva</p>
+                        <p class="plates-p2">Lorem, deren, trataro, filede, nerada</p>
+                        <p class="plates-p3">$9.95</p>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
@@ -241,6 +296,47 @@
 
 
         <div class="menuSection-thirdPart">
+            <div id="carousel2" class="carousel-container">
+                <div class="carousel2 gap-1">
+                    <div class="slide2">
+                        <img src="./public/images/events-1.jpg" alt="" width="400" height="500">
+                        <div class="carousel-content">
+                            <p class="bg-p1">Private parties</p>
+                            <p class="bg-p2">$289</p>
+                            <p class="bg-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius, iure repudiandae laboriosam minima consequuntur nihil obcaecati magni dolore! Amet laboriosam deserunt voluptates illo debiti</p>
+                        </div>
+                    </div>
+
+                    <div class="slide2">
+                        <img src="./public/images/events-2.jpg" alt="" width="400" height="500">
+                        <div class="carousel-content">
+                            <p class="bg-p1">Private parties</p>
+                            <p class="bg-p2">$289</p>
+                            <p class="bg-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius, iure repudiandae laboriosam minima consequuntur nihil obcaecati magni dolore! Amet laboriosam deserunt voluptates illo debiti</p>
+                        </div>
+                    </div>
+
+                    <div class="slide2">
+                        <img src="./public/images/events-3.jpg" alt="" width="400" height="500">
+                        <div class="carousel-content">
+                            <p class="bg-p1">Private parties</p>
+                            <p class="bg-p2">$289</p>
+                            <p class="bg-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius, iure repudiandae laboriosam minima consequuntur nihil obcaecati magni dolore! Amet laboriosam deserunt voluptates illo debiti</p>
+                        </div>
+                    </div>
+
+                    <div class="slide2">
+                        <img src="./public/images/events-4.jpg" alt="" width="400" height="500">
+                        <div class="carousel-content">
+                            <p class="bg-p1">Private parties</p>
+                            <p class="bg-p2">$289</p>
+                            <p class="bg-p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius, iure repudiandae laboriosam minima consequuntur nihil obcaecati magni dolore! Amet laboriosam deserunt voluptates illo debiti</p>
+                        </div>
+                    </div>
+                </div>
+                <button carouselBtn="carousel2" class="previous"><i class="bi bi-chevron-left"></i></button>
+                <button carouselBtn="carousel2" class="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
 
         </div>
     </section>
@@ -349,10 +445,41 @@
     <!--~ chefs section end -->
 
 
-    <!--~  gallery ction start -->
+    <!--~  gallery section start -->
     <section class="gallerySection" id="gallery">
         <p class="gallerySection-p1">GALLERY</p>
         <p class="gallerySection-p2">CHECK <span>OUR GALLERY</span></p>
+        <div id="carousel2" class="carousel-container">
+            <div class="carousel2 gap-4">
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-1.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-2.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-3.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-4.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-5.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-6.jpg" alt=""  width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-7.jpg" alt="" width="220">
+                </div>
+                <div class="slide3">
+                    <img src="./public/images/gallery/gallery-8.jpg" alt="" width="220">
+                </div>
+                
+            </div>
+            <button carouselBtn="carousel2" class="previous"><i class="bi bi-chevron-left"></i></button>
+            <button carouselBtn="carousel2" class="next"><i class="bi bi-chevron-right"></i></button>
+        </div>
     </section>
     <!--~ gallery section end -->
 
@@ -508,5 +635,7 @@
     <script src="./public/js/app.js"></script>
     <script src="./public/js/modal.js"></script>
     <script src="./public/js/carousel.js"></script>
+    <script src="./public/js/menu.js"></script>
+
 </body>
 </html>
