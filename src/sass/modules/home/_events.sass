@@ -1,0 +1,68 @@
+.eventsSection
+    padding-top: 10vh
+    font-family: robotoFont
+
+.slide2
+    position: relative
+    
+    img
+        filter: brightness(.4)
+
+.carousel2
+    display: flex
+    gap: 5px
+    transition: transform 0.5s ease
+
+.carousel-content
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 10px
+    right: 0
+    left: 0
+    bottom: 0
+    gap: 0
+    color: #fff
+
+.carousel-container2
+    position: relative
+    overflow: hidden
+
+
+.bg-p1
+    font-family: amaticFont
+    font-size: 24px
+    margin: 0
+
+.bg-p2
+    font-size: 32px
+    font-weight: bold
+    border-bottom: 2px solid  #ce1212
+    display: inline!important
+    align-self: flex-start !important
+
+.bg-p3
+    color: rgba(255, 255, 255, 0.8)
+
+
+.next2 ,
+.previous2
+    padding: 1vh 2vw
+    border-radius: 20px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    display: none
+    
+
+@media ( max-width: 426px)
+    .slide2
+        justify-content: center
+        min-width: 100%
+        img
+            min-width: 100%
+    .carousel2
+        display: flex
+        gap: 0

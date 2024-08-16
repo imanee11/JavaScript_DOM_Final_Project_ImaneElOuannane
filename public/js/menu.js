@@ -32,7 +32,7 @@ lunch.addEventListener("click",()=>{
     document.getElementById("lunch").style.borderBottom = "2px solid #ce1212";
 
     let title = document.querySelector(".content-p2")
-    title.textContent = "Dinner"
+    title.textContent = "Lanch"
 })
 
 
@@ -43,5 +43,5 @@ dinner.addEventListener("click",()=>{
     document.getElementById("dinner").style.borderBottom = "2px solid #ce1212";
 
     let title = document.querySelector(".content-p2")
-    title.textContent = "Lunch"
+    title.textContent = "Dinner"
 })

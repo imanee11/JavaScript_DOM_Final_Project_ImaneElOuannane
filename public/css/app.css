@@ -14656,7 +14656,7 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 4vw;
+  gap: 3vw;
   margin: 0;
   padding: 0;
 }
@@ -14891,7 +14891,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
-    padding-top: 10vh;
+    padding-top: 20vh !important;
   }
   .animated {
     max-width: 100%;
@@ -14995,10 +14995,11 @@ nav ul li a:hover {
 }
 .playBtn::after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
   border: 6px solid #ce1212;
+  background-color: rgba(206, 18, 18, 0.4392156863);
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -15294,7 +15295,7 @@ nav ul li a:hover {
 }
 
 .indicator {
-  padding: 1vh 0.5vw;
+  padding: 5px 5px;
   background: #ce1212;
   border-radius: 10px;
 }
@@ -15346,6 +15347,39 @@ nav ul li a:hover {
   padding-top: 10vh;
 }
 
+@media (max-width: 426px) {
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+    min-width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .slide .slide-p1 {
+    width: 400px;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .indicator {
+    padding: 5px 5px;
+  }
+  .plates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10vw;
+    padding-bottom: 5vh;
+  }
+}
+.eventsSection {
+  padding-top: 10vh;
+  font-family: robotoFont;
+}
+
 .slide2 {
   position: relative;
 }
@@ -15372,6 +15406,11 @@ nav ul li a:hover {
   color: #fff;
 }
 
+.carousel-container2 {
+  position: relative;
+  overflow: hidden;
+}
+
 .bg-p1 {
   font-family: amaticFont;
   font-size: 24px;
@@ -15390,39 +15429,28 @@ nav ul li a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.next2,
+.previous2 {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  display: none;
+}
+
 @media (max-width: 426px) {
-  .slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vw;
-    min-width: 100%;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-  .slide .slide-p1 {
-    width: 400px;
-  }
-  .slide img {
-    width: 100%;
-  }
-  .indicator {
-    padding: 1vh 1.5vw;
-  }
-  .plates {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 10vw;
-    padding-bottom: 5vh;
-  }
   .slide2 {
     justify-content: center;
     min-width: 100%;
   }
   .slide2 img {
     min-width: 100%;
+  }
+  .carousel2 {
+    display: flex;
+    gap: 0;
   }
 }
 .chefsSection {
@@ -15638,7 +15666,7 @@ nav ul li a:hover {
 }
 .gallerySection {
   font-family: robotoFont;
-  padding-bottom: 20vh;
+  padding-bottom: 5vh;
   padding-left: 5vw;
   padding-right: 5vw;
   background-color: #f2f2f2;
@@ -15665,17 +15693,48 @@ nav ul li a:hover {
 .slide3 img {
   padding: 5px;
   transition: 0.3s;
+  margin-bottom: 12vh;
 }
 .slide3 img:hover {
   border: 4px solid #ce1212;
 }
 
+.carousel3 {
+  display: flex;
+  gap: 5px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-container3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.next3,
+.previous3 {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  display: none;
+}
+
 @media (max-width: 426px) {
   .slide3 {
-    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 100% !important;
+    gap: 0;
   }
   .slide3 img {
-    min-width: 100%;
+    min-width: 100vw;
+    padding: 0;
+  }
+  .carousel3 {
+    display: flex;
+    gap: 0;
   }
 }
 .contactSection {
